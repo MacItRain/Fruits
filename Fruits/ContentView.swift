@@ -9,13 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        TabView {
+         
+            CardView(color1: Color.ColorBlueberryLight, color2: Color.ColorblueberryDark, fruitImage: "blueberry")
+            
+            CardView(color1: Color.ColorBlueberryLight, color2: Color.ColorblueberryDark, fruitImage: "blueberry")
+            
+            CardView(color1: Color.ColorBlueberryLight, color2: Color.ColorblueberryDark, fruitImage: "blueberry")
+            
+            CardView(color1: Color.ColorBlueberryLight, color2: Color.ColorblueberryDark, fruitImage: "blueberry")
+            
+            CardView(color1: Color.ColorBlueberryLight, color2: Color.ColorblueberryDark, fruitImage: "blueberry")
+           
         }
-        .padding()
+        .tabViewStyle(PageTabViewStyle())
     }
 }
 
